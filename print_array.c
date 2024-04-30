@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_array - prints an array of integers
+ * print_array - Prints an array of integers
  *
- * @array: The aeeay to be printed
+ * @array: The array to be printed
  * @size: Number of elements in @array
  */
 void print_array(const int *array, size_t size)
@@ -15,7 +15,7 @@ void print_array(const int *array, size_t size)
 	while (array && i < size)
 	{
 		if (i > 0)
-		    printf(", ");
+			printf(", ");
 		printf("%d", array[i]);
 		++i;
 	}

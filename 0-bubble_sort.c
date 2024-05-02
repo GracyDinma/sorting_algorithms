@@ -8,13 +8,11 @@
  * Description: swap two elements
  */
 
-void swap_elements(int *c, int *d)
+void swap(int *c, int *d)
 {
-	int tmp;
-
-	tmp = *d;
-	*d = *c;
-	*c = tmp;
+	int temp = *c;
+	*c = *d;
+	*d = tmp;
 }
 
 /**

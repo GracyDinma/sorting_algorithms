@@ -24,13 +24,15 @@ void swap(int *c, int *d)
  */
 void selection_sort(int *array, size_t size)
 {
+
+	size_t i, j;
 	if (array == NULL || size < 1)
 		return;
 
-	for (size_t i = 0; i < size - 1; i++)
+	for (i = 0; i < size - 1; i++)
 	{
 		size_t min_idx = i;
-		for (size_t j = i + 1; j < size; j++)
+		for (j = i + 1; j < size; j++)
 		{
 			if (array[j] < array[min_idx])
 			{
